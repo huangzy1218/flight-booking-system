@@ -1,0 +1,7 @@
+﻿  algorithm.cpp
+  cstring.cpp
+C:\Users\86158\Desktop\数据结构实习\FlightBookingSystem\FlightBookingSystem\cstring.cpp(67,14): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  string.h
+  vector.cpp
+  正在生成代码...
+  FlightBookingSystem.vcxproj -> C:\Users\86158\Desktop\数据结构实习\FlightBookingSystem\x64\Debug\FlightBookingSystem.exe

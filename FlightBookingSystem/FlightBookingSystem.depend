@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1688515839 source:c:\users\86158\desktop\数据结构实习\flightbookingsystem\flightbookingsystem\flight.cpp
+	"flight.h"
+
+1688545419 c:\users\86158\desktop\数据结构实习\flightbookingsystem\flightbookingsystem\flight.h
+	"string.h"
+
+1688539317 c:\users\86158\desktop\数据结构实习\flightbookingsystem\flightbookingsystem\string.h
+	<iostream>
+	<cassert>
+
+1688550548 source:c:\users\86158\desktop\数据结构实习\flightbookingsystem\flightbookingsystem\algorithm.cpp
+	"algorithm.h"
+
+1688550553 c:\users\86158\desktop\数据结构实习\flightbookingsystem\flightbookingsystem\algorithm.h
+	<cstddef>
+
+1688520822 source:c:\users\86158\desktop\数据结构实习\flightbookingsystem\flightbookingsystem\cstring.cpp
+	"cstring.h"
+	"algorithm.h"
+
+1688520321 c:\users\86158\desktop\数据结构实习\flightbookingsystem\flightbookingsystem\cstring.h
+	"algorithm.h"
+
+1688551161 source:c:\users\86158\desktop\数据结构实习\flightbookingsystem\flightbookingsystem\vector.cpp
+	"vector.h"
+	"algorithm.h"
+
+1688552497 c:\users\86158\desktop\数据结构实习\flightbookingsystem\flightbookingsystem\vector.h
+	<assert.h>
+
+1688552663 source:c:\users\86158\desktop\数据结构实习\flightbookingsystem\flightbookingsystem\main.cpp
+	"string.h"
+	"vector.h"
+	<iostream>
+
+1688552692 source:c:\users\86158\desktop\数据结构实习\flightbookingsystem\flightbookingsystem\string.cpp
+	"string.h"
+	"cstring.h"
+	"algorithm.h"
+	<string.h>
+
