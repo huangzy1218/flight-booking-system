@@ -30,6 +30,10 @@ public:
 	{
 		return firstBlock;
 	}
+	void setFirstBlock(BlockInfo* firstBlock)
+	{
+		this->firstBlock = firstBlock;
+	}
 	FileInfo* getNext()
 	{
 		return next;
@@ -38,13 +42,13 @@ public:
 	{
 		next = fp;
 	}
-	void IncreaseRecordAmmount()
+	void increaseRecordAmmount()
 	{
 		recordAmount++;
 	}
-	void IncreaseRecordLength()
+	void increaseRecordLength()
 	{
-		recordLength += 4096;
+		recordLength += BLOCK_SIZE;
 	}
 private:
 	utils::string dbName;

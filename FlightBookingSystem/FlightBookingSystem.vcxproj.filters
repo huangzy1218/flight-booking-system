@@ -30,6 +30,33 @@
     <ClInclude Include="block_info.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="bplustree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="catalog_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="buffer_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="block_handler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="reservation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="file_handler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="exceptions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="index_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="record_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="string.h">
@@ -69,6 +96,24 @@
       <Filter>头文件</Filter>
     </ClCompile>
     <ClCompile Include="file_info.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="block_handler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="block_info.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="file_handler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="buffer_manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bplustree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="record_manager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

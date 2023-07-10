@@ -70,6 +70,10 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\google-download\boost_1_80_0\boost_1_80_0\;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\google-download\boost_1_80_0\boost_1_80_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -112,6 +116,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\google-download\boost_1_80_0\boost_1_80_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -134,21 +139,36 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="algorithm.h" />
+    <ClInclude Include="block_handler.h" />
     <ClInclude Include="block_info.h" />
+    <ClInclude Include="bplustree.h" />
+    <ClInclude Include="buffer_manager.h" />
+    <ClInclude Include="catalog_manager.h" />
     <ClInclude Include="cstring.h" />
+    <ClInclude Include="exceptions.h" />
+    <ClInclude Include="file_handler.h" />
+    <ClInclude Include="index_manager.h" />
+    <ClInclude Include="record_manager.h" />
+    <ClInclude Include="reservation.h" />
     <ClInclude Include="sql_statement.h" />
     <ClInclude Include="vector.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="algorithm.cpp" />
+    <ClCompile Include="block_handler.cpp" />
+    <ClCompile Include="block_info.cpp" />
+    <ClCompile Include="bplustree.cpp" />
+    <ClCompile Include="buffer_manager.cpp" />
     <ClCompile Include="commons.h" />
     <ClCompile Include="cstring.cpp" />
     <ClCompile Include="customer.h" />
+    <ClCompile Include="file_handler.cpp" />
     <ClCompile Include="file_info.cpp" />
     <ClCompile Include="file_info.h" />
     <ClCompile Include="flight.cpp" />
     <ClCompile Include="flight.h" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="record_manager.cpp" />
     <ClCompile Include="sql_statement.cpp" />
     <ClCompile Include="string.cpp" />
     <ClCompile Include="string.h" />

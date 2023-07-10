@@ -44,7 +44,7 @@ public:
 
 	// 读取数据
 	void readValue(const char* content);
-	void readValie(utils::string content);
+	void readValue(utils::string content);
 
 	// 析构函数
 	~TKey();
@@ -59,6 +59,18 @@ public:
 	bool operator==(const TKey t);
 	bool operator!=(const TKey t);
 
+	int getKeyType()
+	{
+		return keyType;
+	}
+	char* getKey()
+	{
+		return key;
+	}
+	int getLength()
+	{
+		return length;
+	}
 private:
 	int keyType;
 	char* key;
@@ -78,7 +90,8 @@ public:
 		: sqlType(sqlType)
 	{}
 	// 析构函数
-	virtual ~SQL() {}
+	virtual ~SQL() 
+	{}
 	int getSqlType()
 	{
 		return sqlType;
@@ -176,7 +189,7 @@ private:
 };
 
 
-class CreateIndex : public SQL
+class SQLCreateIndex : public SQL
 {
 public:
 	SQLCreateIndex(utils::vector<utils::string> sqls);

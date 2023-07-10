@@ -16,4 +16,11 @@ namespace utils
 		a = b;
 		b = temp;
 	};
+
+	/* 字符串转化为整数 */
+	int atoi(const char* str);
+
+	/* 字符串转化为单精度浮点数 */
+	float atof(const char* str);
+
 }

@@ -4,6 +4,7 @@
 #include "algorithm.h"
 #pragma warning (disable: 4996)
 
+
 // 创建一个命名空间
 namespace utils
 {
@@ -48,6 +49,8 @@ namespace utils
 		{
 			return _size;
 		}
+		/* 判等运算符重载 */
+		bool operator==(const string& other) const;
 		/* 获取容量 */
 		size_t capacity() const
 		{
@@ -65,11 +68,15 @@ namespace utils
 			assert(pos < _size);
 			return _str[pos];
 		}
+		/* +运算符重载 */
+		string operator+(const string& o);
 		const char& operator[](size_t pos) const
 		{
 			assert(pos < _size);
 			return _str[pos];
 		}
+		// 输出运算符重载
+		friend std::ostream& operator<<(std::ostream& os, const string& obj);
 		/* 反转 */
 		void reserve(size_t n);
 		/* 改变存储的字符数 */
@@ -100,6 +107,7 @@ namespace utils
 		size_t _size;
 		size_t _capacity;
 		static const size_t npos = -1;
+
 	};
 
 	/* 构造函数 */
@@ -302,6 +310,27 @@ namespace utils
 		ret.resize(len);
 		memcpy(&ret, &this[pos], len);
 		return ret;
+	}
+
+	/* 判等运算符重载 */
+	bool string::operator==(const string& other) const
+	{
+		return strcmp(this->_str, other._str);
+	}
+
+	/* +运算符重载 */
+	string string::operator+(const string& o)
+	{
+		string tmp(*this);
+		tmp.append(o._str);
+		return tmp;
+	}
+
+	std::ostream& operator<<(std::ostream& os, const string& obj) 
+	{
+		os << obj._str;
+		
+		return os;
 	}
 }
 

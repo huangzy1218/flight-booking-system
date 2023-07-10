@@ -13,3 +13,10 @@
 #define SIGN_GT 3
 #define SIGN_LE 4
 #define SIGN_GE 5
+
+#define BLOCK_SIZE 1024 * 4
+
+#define PRIMARY_KEY 1
+#define SECONDARY_KEY 2
+
+#define NPOS -1
